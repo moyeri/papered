@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Papered</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+
+    <style>
+      html, body {
+        position: relative;
+        height: 100%;
+
+        font-family: 'Unica One', cursive;
+
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        margin: 0;
+
+        color: white;
+        background-color: #ff9a9e;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          filter: blur(10px);
+          opacity: 0;
+        }
+
+        100% {
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+
+      .container {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      .title {
+        color: #fff;
+        font-size: 8vw;
+
+        animation: fadeIn forwards 2.5s;
+        text-shadow: 0.5vw 0.5vw rgb(241, 109, 114);
+      }
+
+
+      .socialicons {
+        position: absolute;
+
+        bottom: 32px;
+        left: 32px;
+      }
+
+      .social {
+        display: block;
+        
+        width: calc(32px + 2vw);
+        height: calc(32px + 2vw);
+
+        animation: fadeIn forwards 2.5s;
+
+        color: white;
+      }
+
+      .social:hover {
+        color: rgba(0, 0, 0, .6);
+      }
+
+      .instagram {}
+
+      .icon {
+        width: 100%;
+        height: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">P A P E R E D.</h1>
+    </main>
+
+    <div class="socialicons">
+
+      <a href="https://www.instagram.com/_papered" target="_blank" rel="noopener noreferrer nofollow" class="social instagram">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g fill="none" fill-rule="evenodd">
+            <path fill="currentColor" fill-rule="nonzero" d="M15 4H9a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V9a5 5 0 0 0-5-5zm3.5 11c0 2-1.6 3.5-3.5 3.5H9c-2 0-3.5-1.6-3.5-3.5V9c0-2 1.6-3.5 3.5-3.5h6c2 0 3.5 1.6 3.5 3.5v6z"/>
+            <path fill="currentColor" fill-rule="nonzero" d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+            <circle cx="16.5" cy="7.5" r="1" fill="currentColor" fill-rule="nonzero"/>
+          </g>
+        </svg>
+      </a>
+
+      <!-- <a href="https://www.instagram.com/_papered" target="_blank" rel="noopener noreferrer nofollow" class="social instagram">
+        <p>replace me! with <code>SVG</code></p>
+      </a> -->
+
+    </div>
+  </body>
+</html>
+
